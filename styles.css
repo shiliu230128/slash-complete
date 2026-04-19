@@ -19,3 +19,59 @@
 		}
 	}
 }
+
+/* ==================== 新增：自定义命令编辑/拖拽/按钮样式 ==================== */
+/* 命令项整体布局 */
+.slash-command-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* 拖拽排序手柄 */
+.drag-handle {
+  color: #999;
+  cursor: grab;
+  user-select: none;
+  font-weight: bold;
+}
+.drag-handle:active {
+  cursor: grabbing;
+}
+/* 指令名编辑输入框 */
+.command-edit-input {
+  border: 1px solid var(--interactive-accent);
+  border-radius: 4px;
+  padding: 2px 4px;
+  outline: none;
+  width: 120px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+/* 命令别名展示 */
+.command-alias {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 4px;
+}
+/* 新增命令按钮 */
+.add-command-btn {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.add-command-btn:hover {
+  opacity: 0.9;
+}
+/* 拖拽时高亮样式 */
+.drag-active {
+  background: var(--background-modifier-hover);
+}
